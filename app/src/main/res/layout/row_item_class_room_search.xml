@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:background="@color/overWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overWhite"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2px"
+            android:background="@color/overWhite"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_profile_text"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/round_profile_pic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tvClass_room_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="01"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="true"
+                        android:text="Sim3 2016/2017"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic" />
+
+
+                    <TextView
+                        android:id="@+id/tvInstitut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="Institute"
+                        android:textColor="@color/black"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2017-01-28 at 09:00AM"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="10dp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_background" />
+
+        <TextView
+            android:id="@+id/tv_responsable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_admin"
+            android:gravity="center_vertical|left"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/gray_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tvCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/icon_worldwide_location_48"
+                android:gravity="center_vertical|left"
+                android:paddingRight="10dp"
+                android:text="Tunisia"
+                android:textColor="@color/gray_dark" />
+
+            <Button
+                android:id="@+id/btnJoinSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/button"
+                android:text="Join" />
+
+        </LinearLayout>
+
+
+        <!--  Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:forceHasOverlappingRendering="true"></android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
